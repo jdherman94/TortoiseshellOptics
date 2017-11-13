@@ -1,0 +1,154 @@
+html {
+  font-size: 18px;
+  font-family: Helvetica;
+  line-height: 1.4;
+}
+/*container1*/
+.container1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/tortoiseshell-optics/resources/images/glasses-bg.png");
+  height: 31rem;
+  background-size: cover;
+  
+ 
+}
+
+header {
+  display: flex;
+  width: 960px;
+  background-color: cadetblue; 
+  color: white;
+  margin-top: 1rem;
+  height: 3rem;
+  align-items: center;
+  
+}
+.logo {
+  
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+}
+.logo img {
+  height: 1.5rem;
+  padding-left: 2rem;
+  padding-right: 1rem;
+}
+.one {
+  padding-right: 2rem;
+}
+.two {
+  display: none;
+}
+
+  
+
+.SEE {
+  font-weight: bold;
+  font-size: 2rem;
+  line-height: 1.2;
+  background-color: white;
+  position: relative;
+  top: 10rem;
+  padding: 1.5rem 5rem 1.5rem 5rem;
+  margin-left: 22rem;
+}
+/*Container2*/
+.container2 {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+}
+.Exams,
+.Fittings,
+.Delivery {
+  height: 8rem;
+  display: flex;
+  flex-direction: column;
+  margin: 0 2rem;
+}
+.Exams div img {
+  width: 3.5rem;
+
+}
+.Fittings div img,
+.Delivery div img {
+  width: 5rem;
+  height: auto;
+}
+.Exams div,
+.Fittings div,
+.Delivery div {
+  width: 5rem;
+  height: 5rem;
+
+}
+.Exams p,
+.Fittings p,
+.Delivery p {
+  width: 5rem;
+  text-align: center;
+  
+}
+/*contaiener3*/
+.container3 {
+  display: flex;
+  justify-content: center;
+}
+.Philosophy,
+.Appointments {
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+  font-size: 1rem;
+  padding-bottom: 5rem;
+}
+  .Philosophy {
+    margin-right: 5%;
+  }
+
+.Philosophy h4,
+.Appointments h4 {
+  background-color: cadetblue;
+  width: 8.75rem;
+  padding: .5rem 0rem .5rem 1.25rem;
+  font-weight: bold;
+}
+/*container4*/
+.container4 {
+  display: flex;
+  justify-content: center;
+  
+}
+footer {
+  display: flex;
+  width: 960px;
+  background-color: azure;
+  align-items: center;
+  padding: 4rem 1rem 4rem 4rem;
+}
+footer img {
+  height: 1.5rem;
+  padding-right: 1rem;
+}
+@media only screen and (max-width: 1020px) {
+  /*container1*/
+  .container1 {
+    height: 22rem;
+    align-items: flex-end;
+  }
+  header {
+    margin-top: 0;
+    width: 100%;
+  }
+  .SEE {
+    font-size: 1.33rem;
+    top: 5rem;
+    padding: .75rem 4rem .75rem 4rem;
+    margin-left: 0;
+    margin-right: 2rem;
+}
+  
+}

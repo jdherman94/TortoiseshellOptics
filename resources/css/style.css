@@ -11,10 +11,17 @@ html {
   background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/tortoiseshell-optics/resources/images/glasses-bg.png");
   height: 31rem;
   background-size: cover;
-  
  
 }
-
+.container1a {
+  display: flex;
+  justify-content: center;
+}
+.container1b {
+  display: flex;
+  justify-content: flex-end;
+  width: 960px;
+}
 header {
   display: flex;
   width: 960px;
@@ -53,7 +60,8 @@ header {
   position: relative;
   top: 10rem;
   padding: 1.5rem 5rem 1.5rem 5rem;
-  margin-left: 22rem;
+  position: relative;
+  right: -2rem;
 }
 /*Container2*/
 .container2 {
@@ -64,31 +72,36 @@ header {
 .Exams,
 .Fittings,
 .Delivery {
-  height: 8rem;
+  height: 6rem;
   display: flex;
   flex-direction: column;
   margin: 0 2rem;
+  
+  
 }
 .Exams div img {
   width: 3.5rem;
-
+  margin: auto;
 }
 .Fittings div img,
 .Delivery div img {
   width: 5rem;
-  height: auto;
+  margin: auto;
+  
+  
 }
 .Exams div,
 .Fittings div,
 .Delivery div {
-  width: 5rem;
+  width: 7rem;
   height: 5rem;
-
+  display: flex;
+  justify-content: center;
 }
 .Exams p,
 .Fittings p,
 .Delivery p {
-  width: 5rem;
+  width: 7rem;
   text-align: center;
   
 }
@@ -115,6 +128,8 @@ header {
   width: 8.75rem;
   padding: .5rem 0rem .5rem 1.25rem;
   font-weight: bold;
+  margin-bottom: 1rem; 
+  color: white;
 }
 /*container4*/
 .container4 {
@@ -133,12 +148,15 @@ footer img {
   height: 1.5rem;
   padding-right: 1rem;
 }
-@media only screen and (max-width: 1020px) {
+@media only screen and (max-width: 1060px) {
   /*container1*/
   .container1 {
     height: 22rem;
     align-items: flex-end;
   }
+  .container1a {
+    width: 100%;
+}
   header {
     margin-top: 0;
     width: 100%;
@@ -149,6 +167,105 @@ footer img {
     padding: .75rem 4rem .75rem 4rem;
     margin-left: 0;
     margin-right: 2rem;
+    right: 0;
+  }
 }
+@media only screen and (max-width: 660px) {
+  /*container1*/
+  .container1 {
+    height: 17rem;
+    align-items: flex-end;
+  }
+
+  .logo p {
+    display: none;
+  }
   
+  .one {
+    display: none;
+  }
+  .two {
+    display: block;
+    margin-right: 2rem; 
+  }
+  .container1b {
+    width: 100%;
+  }
+  .SEE {
+    font-size: 1rem;
+    top: 9rem;
+    padding: 1rem 0;
+    margin-right: 0;
+    width: 100%;
+    text-align: center;
+  }
+  /*Container2*/
+  .container2 {
+    margin-top: 3.77rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .Exams,
+  .Fittings,
+  .Delivery {
+    margin: 0;
+  
+    
+  }
+  .Exams,
+  .Fittings {
+    margin-bottom: 1.54rem;
+  }
+  
+  .Exams p,
+  .Fittings p,
+  .Delivery p {
+  font-size: .77rem;
+  
+  
+  }
+  /*contaiener3*/
+  .container3 {
+    justify-content: flex-start;
+    flex-direction: column;
+  }
+  .Philosophy {
+    margin-top: 3.77rem;
+  }
+  .Philosophy,
+  .Appointments {
+    flex-direction: column;
+    width: 100%;
+    font-size: .77rem;
+    padding-bottom: 4rem;
+  }
+  .Philosophy {
+    margin-right: 0;
+  }
+  .Philosophy h4,
+  .Appointments h4 {
+    background-color: cadetblue;
+    width: 100%;
+    padding: .5rem 0;
+    margin-bottom: 1rem; 
+    color: white;
+    text-align: center;
+  }
+  .Philosophy p,
+  .Appointments p {
+    margin-left: .5rem;
+  }
+  /*container4*/
+  footer p {
+    display: none;
+  }
+  footer img {
+    padding: 0;
+  }
+  footer {
+    justify-content: center;
+    padding: 4rem;
+  }
 }
